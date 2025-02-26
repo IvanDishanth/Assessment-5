@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+<!--navbar-->
+<section>
+    <nav class="fixed top-0 left-0 w-full bg-gray-800 text-white p-1 shadow-md z-50">
+        <ul class="container ml-auto flex space-x-4 text-white">
+            <img src="Assests/images/finallogo.png" alt="Brand Logo" class="h-12 w-12 object-contain">
+            <div class="absolute right-4 top-4 text-white space-x-4 flex">
+                <li><a href="#home" class="text-white text-lg font-bold">Home</a></li>
+                <li><a href="#About" class="text-white text-lg font-bold">About</a></li>
+                <li><a href="#Services" class="text-white text-lg font-bold">Services</a></li>
+                <li><a href="#Menu" class="text-white text-lg font-bold">Menu</a></li>
+                <div class="relative group">
+                    <button class="text-orange-400 text-lg font-semibold flex items-center space-x-1">Pages <span>▼</span></button>
+                    <!-- Dropdown-->
+                    <div class="absolute left-0 mt-2 bg-white shadow-md rounded-md py-2 w-32 opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 transition-all duration-200">
+                    <a href="Contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact</a>
+                    </div>
+                </div> 
+                <li><button class="px-3 py-1 border border-orange-500 text-orange-500 rounded-md hover:bg-orange-500 hover:text-white hover:border-white transition flex flex items-center space-x-4">Sign Up ?<br><img src="Assests/images/images (1).jpeg" alt="Brand Logo" class="h-6 w-6 object-contain rounded-full"></button>
+                </li>
+            </div>
+        </ul>
+    </nav>
+</section>
+<!--navbar End-->
+
+
+<!--home page-->
+<section>
+    <div class="relative h-screen bg-[url('Assests/images/carousel-1.jpg')] bg-cover bg-center" id="home">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4"> 
+            <h1 class="text-4xl md:text-5xl font-bold">From Our Kitchen to Your <br> Table, Fresh Every Day</h1> 
+            <p class="mt-4 text-lg max-w-2xl"> Enjoy the goodness of fresh, flavorful food delivered straight to you, ready to brighten your day with every bite! </p> 
+            <button class="mt-6 bg-orange-700 hover:bg-orange-600 text-white px-3 py-1 rounded-md text-lg flex items-center space-x-4"> Explore More <br><img src="Assests/images/images (1).jpeg"alt="Brand Logo" class="h-6 w-6 object-contain rounded-full"> </button> 
+        </div> 
+    </div>
+</section>
+<!--home page End-->
+
+
+<!--About-->
+<section>
+<!--img-->
+    <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-10 p-10 justify-center" id="About">
+        <div class="relative">
+            <img src="Assests/images/about-1.jpg"alt="Main dish" class="w-62 h-62 md:w-96 md:h-96 rounded-lg shadow-lg ">
+            <img src="Assests/images/about-2.jpg"alt="small dish" class="w-28 h-28 rounded-lg shadow-md absolute  -top-4 -right-4 border-4 border-white">
+        </div>
+<!--img End-->
+
+<!--details-->
+        <div class="max-w-lg">
+            <span class="bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full">About Us</span>
+            <h2 class="mt-2 md:text-5x1 text-3xl font-bold text-gray-900">Join us on our journey to celebrate <br> the art of food.</h2>
+<!--box-->
+        <div class="mt-4 bg-gray-100 p-4 rounded-lg border-1-4 border-orange-500">
+            <p class="text-gray-700 text-sm">You don't have to cook fancy or complicated masterpieces-just<span class="font-bold">good food from fresh ingredients.</span></p>
+            <p class="text-orange-500 text-sm mt-1 font-semibold">julia Child</p>
+        </div>
+        <p class="mt-4 text-gray-600 text-sm leading-relaxed">We use only the freshest ingredients,sourced locally whenever possible,
+        to create dishes that are as wholesome as they are delicious. Our team of chefs works tirelessly to perfect every recipe, ensuring that each bite is packed with flavor and love.</p>
+<!--but-->
+        <div class="mt-6 flex space-x-4">
+            <button class="bg-orange-500 text- white px-4 py-2 rounded-lg shadow-md text-sm font-semibold hover:bg-orange-600 flex items-center space-x-4">learn More<br><img src="Assests/images/images (1).jpeg"alt="Brand Logo" class="h-8 w-8 object-contain rounded-full"></button>
+            <button class="border border-orange-500 text-orange-500 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-orange-100 flex items-center space-x-4">contact Us<br><img src="Assests/images/images (1).jpeg"alt="Brand Logo" class="h-8 w-8 object-contain rounded-full"></button>
+        </div>
+        </div>
+    </div>
+</section>
+<!--details End-->
+
+<!--Our Specials-->
+<section>
+    <div class="mt-4 bg-red-100 p-4 rounded-lg border-1-4 border-orange-500" id="Menu">
+        <div class="text-center">
+            <span class="bg-gray-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full">Our Specials</span>
+            <h2 class="text-2xl font-bold text-gray-900">Discover a variety of dishes crafted with care.</h2> 
+            <div class="mt-4 space-0 flex justify-center items-center">
+                <button class="px-3 py-1 border bg-orange-500 text-white-100 hover:bg-orange-500 hover:text-white hover:border-white transition flex flex items-center space-x-4">All</button>
+                <button class="px-3 py-1 border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white hover:border-white transition flex flex items-center space-x-4">Vegetarian</button>
+                <button class="px-3 py-1 border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white hover:border-white transition flex flex items-center space-x-4">Beverages</button>
+            </div>
+        </div>
+    
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 max-w-6xl mx-auto">
+            <!--Rice & Curry-->
+            <div class="bg-orange-300 shadow-lg rounded-lg overflow-hidden text-center">
+                <div class="bg-orange-500 text-white py-2 font-bold">Rice & Curry</div>
+                <h3 class="font-semibold text-lg">A Taste in Every Bite</h3>
+                    <p class="font-semibold text-sm mt-2">Experience the soul of Sri Lankan <br> cuisine with Rice and Curry.</p><br>
+                <img src="Assests/images/courses-1.jpg" alt="Rice & Curry" class="w-full h-50 object-cover">
+                <div class="p-4">
+                    
+                </div>
+            </div>
+    
+            <!--Koththu-->
+            <div class="bg-orange-300 shadow-lg rounded-lg overflow-hidden text-center">
+                <div class="bg-orange-500 text-white py-2 font-bold">Koththu</div>
+                <h3 class="font-semibold text-lg">Cheesy, and delicious</h3>
+                    <p class="font-semibold  text-sm mt-2">Every bite is a perfect balance of spice and creamy goodness.</p><br>
+                <img src="Assests/images/courses-3.jpg" alt="Koththu" class="w-full h-50 object-cover">
+                <div class="p-4">
+                    
+                </div>
+            </div>
+    
+            <!--Mango Juice-->
+            <div class="bg-orange-300 shadow-lg rounded-lg overflow-hidden text-center">
+                <div class="bg-orange-500 text-white py-2 font-bold">Mango Juice</div>
+                <h3 class="font-semibold text-lg">Refreshing and natural</h3>
+                    <p class="font-semibold text-sm mt-2">Enjoy a chilled glass of fresh <br> mango juice.</p><br>
+                <img src="Assests/images/beverage-1.jpg" alt="Mango Juice" class="w-full h-50 object-cover">
+                <div class="p-4">
+                </div>
+            </div>
+    
+            <!--Milk Tea-->
+            <div class="bg-orange-300 shadow-lg rounded-lg overflow-hidden text-center">
+                <div class="bg-orange-500 text-white py-2 font-bold flex justify-center items-center">Milk Tea</div>
+                <h3 class="font-semibold text-lg">A warm cup of comfort</h3>
+                <p class="font-semibold text-sm mt-2">The perfect blend of tea and milk for a rich flavor.</p><br>
+                <img src="Assests/images/beverage-2.jpg" alt="Milk Tea" class="w-full h-50 object-cover">
+                <div class="p-4">
+                
+                </div>
+            </div>
+        </div>
+    </div><br>
+</section>
+<!--Our Specials End-->
+
+<!--What We Do-->
+<section>
+    <div class="text-center" id="Services">
+        <span class="bg-gray-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full">What We Do</span>
+        <h2 class="text-2xl font-bold text-gray-900">Learn More What We Do-<br> Our Services</h2> 
+        <div class="mt-4 space-0 flex justify-center items-center">
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 max-w-6xl mx-auto ">
+        <!--Fresh Ingredients-->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center p-4">
+            <img src="Assests/images/icon-1.png" alt="Rice & Curry" class="w-20 h-20 object-cover">
+            <h3 class="font-semibold text-lg">Fresh ingredients</h3>
+            <p class="text-gray-600 text-sm mt-2">We handpicx the fine ,locally produced <br>ingredients to create every dish to give<br> healty life.</p>
+            <button class="px-3 py-1 border border-orange-500 text-orange-500 rounded-md hover:bg-orange-500 hover:text-white hover:border-white transition flex flex items-center space-x-4">Learn More<br><img src="Assests/images/images (1).jpeg" alt="Brand Logo" class="h-6 w-6 object-contain rounded-full"></button>
+        </div>
+
+        <!-- Koththu Card -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center p-4">
+            <img src="Assests/images/icon-2.png" alt="Koththu" class="w-20 h-20 object-cover">
+            <h3 class="font-semibold text-lg">Quality @ Taste</h3>
+            <p class="text-gray-600 text-sm mt-2">Our chef are dedicated to bringing out<br> the best in every fector , ansuring bold <br> flavour and ric is restraunat.</p>
+            <button class="px-3 py-1 border border-orange-500 text-orange-500 rounded-md hover:bg-orange-500 hover:text-white hover:border-white transition flex flex items-center space-x-4">Learn More<br><img src="Assests/images/images (1).jpeg" alt="Brand Logo" class="h-6 w-6 object-contain rounded-full"></button>
+        </div>
+
+        <!---->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center flex flex-col items-center p-4">
+            <img src="Assests/images/icon-3.png" alt="Mango Juice" class="w-20 h-20 object-cover ">
+            <h3 class="font-semibold text-lg">Customizable Options</h3>
+            <p class="text-gray-600 text-sm mt-2">gluten-free ,we offer many options <br> that career to a variety of cliently <br> needs and preferences.</p>
+            <button class="px-3 py-1 border border-orange-500 text-orange-500 rounded-md hover:bg-orange-500 hover:text-white hover:border-white transition flex flex items-center space-x-4">Learn More<br><img src="Assests/images/images (1).jpeg" alt="Brand Logo" class="h-6 w-6 object-contain rounded-full"></button>
+        </div>
+    </div>
+</section>
+<!--What We Do End-->
+
+<!--A Journey-->
+<section>
+    <div class="relative h-80 bg-[url('Assests/images/donate.jpg')] bg-cover bg-center w-full">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="relative z-10 flex flex-col items-start justify-center h-full  text-white px-4">
+            <h1 class="text-4xl md:text-5xl font-bold">A Journey of Flavor, Crafted with Passion</h1> 
+            <p class="mt-4 text-lg max-w-2xl"> Enjoy the goodness of fresh, flavorful food delivered straight to you, ready to brighten your day with every bite! </p> 
+            <span class="bg-gray-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full">Order Now</span>
+        </div> 
+    </div><br>
+</section>
+
+
+
+
+<section>
+    <div class="text-center">
+        <span class="bg-gray-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full">What We Do</span>
+        <h2 class="text-4xl font- text-gray-900">Let's Meet Our Team</h2> 
+        <div class="mt-4 space-0 flex justify-center items-center">
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 max-w-6xl mx-auto">
+        <!-- Rice & Curry Card -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center p-4">
+            <img src="Assests/images/team-1.jpg" alt="Rice & Curry" class="w-60 h-60 object-cover">
+            <h3 class="font-semibold text-lg">Velvet Dawn</h3>
+            <p class="text-red-600 text-sm mt-2">junior chef</p>
+        </div>
+
+        <!-- Koththu Card -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center p-4">
+            <img src="Assests/images/team-2.jpg" alt="Koththu" class="w-60 h-60 object-cover">
+            <h3 class="font-semibold text-lg">Crimson Vale</h3>
+            <p class="text-red-600 text-sm mt-2">senior chef</p>
+        </div>
+
+        <!---->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center flex flex-col items-center p-4">
+            <img src="Assests/images/team-3.jpg" alt="Mango Juice" class="w-60 h-60 object-cover ">
+            <h3 class="font-semibold text-lg">Nova Drift</h3>
+            <p class="text-red-600 text-sm mt-2">senior chef</p>
+        </div>
+        
+        <!---->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center flex flex-col items-center p-4">
+            <img src="Assests/images/team-4.jpg" alt="Mango Juice" class="w-60 h-60 object-cover ">
+            <h3 class="font-semibold text-lg">Blaze Storm</h3>
+            <p class="text-red-600 text-sm mt-2">junior chef</p>
+        </div>
+
+
+    </div><br><br>
+</section>
+
+<section class="bg-rose-50 w-full rounded-2xl shadow-lg p-10 text-center relative"> 
+    <h4 class="text-orange-400 text-lg font-semibold mb-2">Feedback</h4>
+    <h1 class="text-3xl font-extrabold text-gray-800 mb-8">Trusted By Thousands Of<br> People</h1>
+        
+    <div class="relative"> 
+        <div id="testimonial" class="transition-all duration-500"> 
+            <img id="userImage" src="Assests/images/testimonial-1.jpg" alt="User Image" class="w-24 h-24 rounded-full mx-auto border-4 border-white shadow-md"> 
+            <p id="feedbackText" class="mt-6 text-gray-600 italic ">"The cheese kothu was a delightful twist on the classic dish! The gooey melted cheese beautifully complemented the flavors of the kothu."</p> 
+            <p id="userName" class="mt-4 text-gray-900 font-semibold">David Lee</p> 
+        </div>
+
+        <!-- Navigation Arrows --> 
+        <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-300 hover:bg-gray-400 text-white rounded-full p-3 shadow"> &#10094; </button> 
+        <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-300 hover:bg-gray-400 text-white rounded-full p-3 shadow"> &#10095; </button> 
+    </div>
+</section>
+
+
+
+
+
+<section>
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-10 px-10"> 
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-7xl mx-auto">
+    <!--Brand Info --> 
+    <div> 
+        <h4 class="text-2xl font-bold text-orange-500"> Home</h4>
+        <h4 class="text-2xl font-bold text-white-500">Bites</h4> 
+        <p class="mt-4"> We take pride in serving freshly prepared dishes crafted with the finest ingredients.whether you're <br>here for a quick bar a grand feast,<br>our menu offeres searching for everyone. </p>
+        <div class="flex space-x-4 mt-4"> 
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i> <img src="Assests/images/fb.png" class="h-5 w-5"></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i> <img src="Assests/images/insta.png" class="h-5 w-5"></a> 
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i> <img src="Assests/images/youtube.png" class="h-5 w-5"></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i> <img src="Assests/images/social_14072078.png" class="h-5 w-5"></a> 
+        </div>
+    </div>
+    <!-- Address Info --> 
+    <div> 
+        <h5 class="text-lg font-semibold mb-3 text-white">Address</h5>
+        <p> 123 Street, Jaffna, Sri Lanka</p> 
+        <p> +077-123-4567</p> 
+        <p> <a href="mailto:info@homebites.com" class="hover:text-orange-500">info@homebites.com</a></p> 
+    </div>
+        
+    <!-- Quick Links --> 
+    <div> 
+        <h5 class="text-lg font-semibold mb-3 text-white">Quick Links</h5> 
+        <ul class="space-y-2"> 
+            <li><a href="#" class="hover:text-orange-500 transition">About Us</a></li> 
+            <li><a href="#" class="hover:text-orange-500 transition">Contact Us</a></li> 
+            <li><a href="#" class="hover:text-orange-500 transition">Our Services</a></li> 
+            <li><a href="#" class="hover:text-orange-500 transition">Terms & Conditions</a></li> 
+        </ul> 
+    </div>
+    <!--Newsletter Signup --> 
+    <div> 
+        <h5 class="text-lg font-semibold mb-3 text-white">Newsletter</h5> 
+        <p>Where Every Bite Feels Like Home.</p> 
+        <form id="newsletterForm" class="mt-4 flex"> 
+            <input type="email" id="emailInput" placeholder="Your email" class="p-2 rounded-l-lg w-full outline-none focus:ring-2 focus:ring-orange-500" required>
+            <button type="submit" class="bg-orange-500 text-white px-4 rounded-r-lg hover:bg-orange-600 transition-all"> Signup </button> 
+        </form> 
+        <p id="feedback" class="text-sm mt-2"></p> 
+    </div>
+    </div>
+    </footer>
+</section>   
+
+<script>
+    const testimonials = [ 
+        { 
+            image: "Assests/images/testimonial-1.jpg", 
+            text: "The cheese kothu was a delightful twist on the classic dish! The gooey melted cheese beautifully complemented the flavors of the kothu.", 
+            name: "David Lee" 
+        }, 
+        {   image: "Assests/images/testimonial-2.jpg", 
+            text: "Absolutely loved the spicy chicken kothu! The flavors were bold, and the portion size was generous. A must-try!", 
+            name: "Samantha Smith" 
+        }, 
+        {   image: "Assests/images/testimonial-3.jpg", 
+            text: "A perfect balance of spices and texture. The veg kothu was filling and delicious. Will order again!", 
+            name: "Michael Brown" 
+        } 
+    ];
+
+    let currentIndex = 0; 
+    const userImage = document.getElementById("userImage"); 
+    const feedbackText = document.getElementById("feedbackText"); 
+    const userName = document.getElementById("userName"); 
+    const prevBtn = document.getElementById("prevBtn"); 
+    const nextBtn = document.getElementById("nextBtn");
+
+    function showTestimonial(index) { 
+        userImage.src = testimonials[index].image; 
+        feedbackText.textContent = `"${testimonials[index].text}"`; 
+        userName.textContent = testimonials[index].name; 
+    }
+
+    prevBtn.addEventListener("click", () => { 
+        currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1; 
+        showTestimonial(currentIndex); 
+    });
+            
+    nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1; 
+        showTestimonial(currentIndex); 
+    });
+</script>
+<script>
+    document.getElementById('newsletterForm').addEventListener('submit', function (e) { 
+        e.preventDefault(); 
+        const emailInput = document.getElementById('emailInput').value.trim(); 
+        const feedback = document.getElementById('feedback');
+            
+        if (emailInput === '') { 
+            feedback.textContent = ' Please enter a valid email address.'; 
+            feedback.classList.add('text-red-500'); 
+        } else {
+            feedback.textContent = ' Thanks for subscribing!'; 
+            feedback.classList.remove('text-red-500'); 
+            feedback.classList.add('text-green-500'); 
+            // Reset the form after submission 
+            this.reset(); 
+        } 
+    });
+    document.getElementById("menu-btn").addEventListener("click", function () {
+    document.getElementById("menu").classList.toggle("hidden");});
+</script>
+</body>
+</html>
