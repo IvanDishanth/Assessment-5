@@ -4,226 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Car Showrooms</title>
+    <title>mobile phone shops</title>
 </head>
 <body>
 <!--nav-->
 <section>
-<nav class="fixed top-0 left-0 w-full bg-white text-white shadow-md p-3 z-50">
-        <p class="container ml-auto text-black font-mono">Trio Showrooms</p>
-        <ul class="absolute right-4 top-2 text-black space-x-4 flex">
+    <nav class="fixed top-0 left-0 w-full bg-black shadow-md p-5 z-50">
+        <ul class="absolute right-4 top-2 text-white space-x-4 flex">
             <li><a href="#Home">Home</a></li>
             <li><a href="#About Us">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#Team">Team</a></li>
-            <li><a href="#">Dropdown</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <li><button class="bg-orange-700 hover:bg-orange-600 text-white px-3 py-1 rounded-full text-lg flex items-center space-x-4 ">Get Started</button></li>
+            <li><a href="#mobiles">Mobiles</a></li>
+            <li><a href="#Footer">Footer</a></li>
+            <li><a href="file:///home/acer/Documents/Assignment%205/signup.html"><button  class="hover:bg-orange-300  hover:text-black  text-white px-3 py-0.2 rounded-full text-lg flex items-center space-x-4 ">sign Up</button></li>
         </ul>
     </nav>
-</section><br>
-<!--nav End-->
+</section>
+<!--nav-->
 
-<!--Home-->
+<!--Home Page-->
 <section>
-    <div id="Home" class="mt-4 p-2 border-shadow bg-purple-900 bg-black bg-opacity-100 flex items-center justify-between h-screen">
-        <div>
-            <h1 class="text-3xl font-bold">Experience the latest and greatest in automotive<br>excellence at our showroom</h1>
-            <p class="mt-4 text-lg">where luxury, performance, and innovation come to life! <br> Visit us today for exclusive deals</p>
-            <button class="bg-orange-700 hover:bg-orange-600 text-white px-3 py-1 rounded-full text-lg flex items-center space-x-4 ">Get Started</button>
+    <div id="Home" class="relative h-screen bg-[url('Assests/images/Home.jpg')] bg-cover bg-center" id="home">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4"> 
+            <h1 class="text-4xl md:text-5xl font-bold">Welcome To Our <br>Troco</h1> 
+            <p class="mt-4 text-lg max-w-2xl">Looking for the latest smartphones at the best prices? Visit our phone shop for top brands, great deals, and expert support!</p> 
         </div>
-        <img src="Assests/images/360_F_301786630_qpljiXOHbylWfgPnoJ24ITjScJ6LoNGV-removebg-preview.png" alt="" class="text-white-100 h-100">
     </div>
 </section>
-<!--Home End-->
+<!--Home Page-->
 
 <!--About-->
-<section>
-    <div id="About Us" class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-10 p-10 justify-center">
-        <div class="relative">
-            <img src="Assests/images/car1-removebg-preview(4).png"alt="Main dish" class="w-62 h-62 md:w-96 md:h-96 rounded-lg ">
+<section id="About Us" class="bg-red-100 w-full shadow-lg p-10 text-center relative"> 
+    <h1 class="text-3xl font-extrabold text-gray-800 mb-8">ABOUT US</h1>
+    <div class="relative"> 
+        <div id="testimonial" class="transition-all duration-500"> 
+            <div class="grid grid-cols-2 max-w-6xl">
+                <div><img id="userImage" src="Assests/images/About 1.webp" alt="User Image" class="w-96 h-96 mx-auto border-8 border-white shadow-md"></div>
+                <div class="bg-red-200 w-full shadow-lg p-10 text-center justify-center items-center  relative">
+                    <p id="feedbackText" class="mt-6 text-black  font-mono text-2xl justify-center items-center">"Get 10% off when you purchase your phone with a card!
+                        Enjoy savings and a smooth checkout experience.Hurry, this offer won’t last long!"</p>
+                </div>
+        
         </div>
-    <div class="max-w-lg">
-        <h2 class="mt-2 md:text-5x1 text-3xl font-bold text-gray-900">Drive home happiness with our special showroom deals</h2>
-    <div class="mt-4">
-        <p class="text-gray-700 text-sm">The car showroom displayed a stunning collection of the latest models, gleaming under bright showroom lights</span></p>
-    </div>
-    <div class="mt-6 flex space-x-2">
-        <div>
-            <img src="Assests/images/side.png"alt="Logo" class="h-8 w-8 object-contain">
-            <p>A sales representative guided buyers, explaining the benefits of each model and financing options</p>
-        </div>
-        <div>
-            <img src="Assests/images/bank.png"alt="Logo" class="h-8 w-8 object-contain">
-            <p>Customers explored different vehicles, comparing features and colors before making a decision</p>
-        </div>
+        <!--Arrows Button--> 
+        <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-red-300 hover:bg-red-600 text-white  p-3 shadow"> &#10094; </button> 
+        <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-red-300 hover:bg-red-600 text-white  p-3 shadow"> &#10095; </button> 
     </div>
 </section>
 <!--About End-->
 
 <!--Gallery-->
 <section>
-    <div  id="Portfolio" class=" bg-purple-500 p-5 ">
-        <div class="text-center">
-            <span class="bg-gray-100 text-orange-600 text-xs font-bold px-4 py-1 rounded-full">Portfolio</span>
-            <h2 class="text-4xl font- text-gray-900 font-extrabold">Check out our beautifully Portfolio</h2> <br>
+    <style>
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .scroll-container {
+            display: flex;
+            width: 200%;
+            animation: scroll 10s linear infinite;   
+        }
+
+    </style>
+    <nav id="mobiles" class="bg-black-500 text-black p-4">
+        <ul class="flex space-x-6 justify-center">
+            <li><a href="file:///home/acer/Documents/Assignment%205/Detail/oppo.html">OPPO</a></li>
+            <li><a href="#">REALME</a></li>
+            <li><a href="#">REDMI</a></li>
+            <li><a href="#">SAMSUNG</a></li>
+            <li><a href="#">Vivo</a></li>
+         </ul>
+    </div><br>
+    <div class="overflow-hidden w-full relative">
+        <div class="scroll-container">
+            <ul class="space-x-4 flex">
+            <li><img src="Assests/images/oppo/Oppo A3X .webp" alt="About Image 1" class="w-60 mx-2"></li>
+            <li><img src="Assests/images/realme/Realme 10 .webp" alt="About Image 2" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/redmi/Redmi 13 4G .jpg" alt="About Image 3" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/samsung/GALAXY S10.webp" alt="About Image 4" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/vivo/Vivo V29 .png" alt="About Image 5" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/oppo/Oppo Reno 12 FS .jpeg" alt="About Image 6" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/redmi/Xiaomi Redmi Note 14 Pro plus .jpg" alt="About Image 7" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/samsung/Galaxy Z Fold 4 5G.webp" alt="About Image 8" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/oppo/Oppo A3X .webp" alt="About Image 1" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/realme/Realme 10 .webp" alt="About Image 2" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/redmi/Redmi 13 4G .jpg" alt="About Image 3" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/samsung/GALAXY S10.webp" alt="About Image 4" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/vivo/Vivo V29 .png" alt="About Image 5" class="w-60 mx-2 rounded-lg "></li>
+            <li><img src="Assests/images/oppo/Oppo Reno 12 FS .jpeg" alt="About Image 6" class="w-60 mx-2 rounded-lg "></li>
+            <li><img src="Assests/images/redmi/Xiaomi Redmi Note 14 Pro plus .jpg" alt="About Image 7" class="w-60 mx-2 rounded-lg"></li>
+            <li><img src="Assests/images/samsung/Galaxy Z Fold 4 5G.webp" alt="About Image 8" class="w-60 mx-2 rounded-lg "></li>
         </div>
-
-        <div class="grid grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <!--Gallery 1-->
-            <div class="bg-white rounded-lg flex flex-col items-center p-4">
-                <a href="file:///home/acer/Documents/Assignment%204/Detail/car%201.html"><img src="Assests/images/1.jpg" alt="Rice & Curry" class="w-80 h-80 object-cover"></a>
-            </div>
-
-            <!--Gallery 2-->
-            <div class="bg-white rounded-lg flex flex-col items-center p-4">
-                <a href=""><img src="Assests/images/2.jpg" alt="Koththu" class="w-80 h-80 object-cover"></a>
-            </div>
-
-            <!--Gallery 3-->
-            <div class="bg-white rounded-lg flex flex-col items-center p-4">
-                <a href=""><img src="Assests/images/3.jpg" alt="Mango Juice" class="w-80 h-80 object-cover"></a>
-            </div>
-            
-            <!--Gallery 4-->
-            <div class="bg-white rounded-lg flex flex-col items-center p-4">
-                <a href=""><img src="Assests/images/4.jpg" alt="Mango Juice" class="w-80 h-80 object-cover"></a>
-            </div>
-
-            <!--Gallery 5-->
-            <div class="bg-white rounded-lg flex flex-col items-center p-4">
-                <a href=""><img src="Assests/images/5.jpg" alt="Mango Juice" class="w-80 h-80 object-cover"></a>
-            </div>
-
-            <!--Gallery 6-->
-            <div class="bg-white rounded-lg flex flex-col items-center p-4">
-                <a href=""><img src="Assests/images/6.jpg" alt="Mango Juice" class="w-80 h-80 object-cover"></a>
-            </div>
-
-            <!--Gallery 7-->
-            <div class="bg-white rounded-lg flex flex-col items-center p-4">
-                <a href=""><img src="Assests/images/7.jpg" alt="Mango Juice" class="w-80 h-80 object-cover"></a>
-            </div>
-
-            <!--Gallery 8-->
-            <div class="bg-white rounded-lg flex flex-col items-center p-4">
-                <a href=""><img src="Assests/images/8.webp" alt="Mango Juice" class="w-80 h-80 object-cover"></a>
-            </div>
-
-            <!--Gallery 9-->
-            <div class="bg-white rounded-lg flex flex-col items-center p-4">
-                <a href=""><img src="Assests/images/9.jpg" alt="Mango Juice" class="w-80 h-80 object-cover"></a>
-            </div>
-        </div><br><br>
     </div>
 </section>
 <!--Gallery End-->
 
-<!--Team Members-->
-<section>
-    <div  id="Team" class="text-center">
-        <span class="bg-gray-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full">Team</span>
-        <h2 class="text-4xl font- text-gray-900 font-extrabold">Our team is always here to help you</h2> 
-    </div>
-
-    <div class="grid grid-cols-4 gap-6 max-w-6xl mx-auto">
-        <!--Team 1-->
-        <div class="bg-white shadow-lg  p-4">
-            <img src="Assests/images/T1.jpeg" alt="Rice & Curry" class="w-80 h-80 object-cover">
-        </div>
-
-        <!--Team 2-->
-        <div class="bg-white shadow-lg p-4">
-            <img src="Assests/images/T4.jpg" alt="Koththu" class="w-80 h-80 object-cover">
-        </div>
-
-        <!--Team 3-->
-        <div class="bg-white shadow-lg p-4">
-            <img src="Assests/images/T2.jpeg" alt="Mango Juice" class="w-80 h-80 object-cover ">
-        </div>
-        
-        <!--Team 4-->
-        <div class="bg-white shadow-lg p-4">
-            <img src="Assests/images/T3.jpg" alt="Mango Juice" class="w-80 h-80 object-cover ">
-        </div>
-    </div>
-</section>
-<!--Team Members End-->
-
-<!--Clients-->
-<section>
-    <div class="bg-purple-500 p-5 ">
-        <div class="text-center">
-            <span class="bg-gray-100 text-orange-600 text-xs font-bold px-4 py-1 rounded-full">Team Members</span>
-            <h2 class="text-4xl font- text-gray-900">Let's Meet Our Team</h2> 
-        </div>
-        <ul class="flex items-center">
-            <li><img src="Assests/images/logo/1.png"></li>
-            <li><img src="Assests/images/logo/2.png"></li>
-            <li><img src="Assests/images/logo/3.png"></li>
-            <li><img src="Assests/images/logo/4.png"></li>
-            <li><img src="Assests/images/logo/5.png"></li>
-            <li><img src="Assests/images/logo/6.png"></li>
-        </ul>
-    </div>
-</section>
-<!--Clients End-->
-
 <!--Footer-->
 <section>
-    <div  id="Contact" class="mt-4 bg-gray-300 p-5 border-1-4 border-black">
-        <div class="grid grid-cols-4 space-x-4">
-            <div>
-                <ul>
-                    <li class="font-extrabold">Trio Showrooms</li>
-                    <li>No50 Hake Road,<br>Bampalatiya<br>colombo-05<br>Sri Lanka</li>
-                    <li>Phone:- 035 152 0521</li>
-                    <li>Email:- Trio@gmail.com</li>
-                </ul>
+    <div id="Footer" class="bg-white dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                </a>
             </div>
-            <div>
-                <ul>
-                    <li class="font-extrabold">Usefull links</li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team of Services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li class="font-extrabold">Our Services</li>
-                    <li>Brand New Cars</li>
-                    <li>Leasing Methods</li>
-                    <li>Second Hand Cars</li>
-                    <li>Car Barts</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li class="font-extrabold">Our social Networks</li>
-                    <li>Our marketing team have lotof discount An ideas.We always sctivate on social networka</li>
-                    <ul class="grid grid-cols-5">
-                        <li><img src="Assests/images/logo/fb.png" class="w-4 h-4"></li>
-                        <li><img src="Assests/images/logo/in.png" class="w-4 h-4"></li>
-                        <li><img src="Assests/images/logo/insta.png" class="w-4 h-4"></li>
-                        <li><img src="Assests/images/logo/twitter.png" class="w-4 h-4"></li>
-                        <li><img src="Assests/images/logo/youtube.png" class="w-4 h-4"></li>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4"><a href="https://flowbite.com/" class="hover:underline">Flowbite</a></li>
+                        <li><a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a></li>
                     </ul>
-                </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4"><a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a></li>
+                        <li><a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4"><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
             </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
         </div>
     </div>
 </section>
 <!--Footer End-->
 
-<!--Copyrights-->
-<div> 
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> 
-    <span class="block text-sm text-black sm:text-center dark:text-black">© 2025<a href="https://flowbite.com/" class="hover:underline">Trio Showrooms</a>. All Rights Reserved.</span> 
-</div>
-<!--Copyrights End-->
+
+
+
+<script>
+    const testimonials = [ 
+        { 
+            image: "Assests/images/About 1.webp", 
+            text: "Get 10% off when you purchase your phone with a card!Enjoy savings and a smooth checkout experience.Hurry, this offer won’t last long!"
+        }, 
+        {   
+            image: "Assests/images/About 2.jpg", 
+            text: "Our phone shop offers easy EMI options to make buying your dream phone more affordable. Choose from 0% interest EMI plans and flexible monthly payments that fit your budget. Get your favorite smartphone today and pay in easy installments without any hassle! 📱💳.", 
+        }, 
+        {   
+            image: "Assests/images/About 3.webp", 
+            text: "At our phone shop, we offer a one-time free display replacement if your phone screen breaks within the warranty period. Enjoy peace of mind knowing your device is protected from accidental damage. Buy with confidence and get a free screen replacement for your first break! 📱🔧", 
+        } 
+    ];
+
+    let currentIndex = 0; 
+    const userImage = document.getElementById("userImage"); 
+    const feedbackText = document.getElementById("feedbackText"); 
+    const prevBtn = document.getElementById("prevBtn"); 
+    const nextBtn = document.getElementById("nextBtn");
+
+    function showTestimonial(index) { 
+        userImage.src = testimonials[index].image; 
+        feedbackText.textContent = `"${testimonials[index].text}"`;
+    }
+
+    prevBtn.addEventListener("click", () => { 
+        currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1; 
+        showTestimonial(currentIndex); 
+    });
+            
+    nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1; 
+        showTestimonial(currentIndex); 
+    });
+</Script>
+<script>
+
+
+</script>
+
+
+
+        
+
+
+
 </body>
 </html>
