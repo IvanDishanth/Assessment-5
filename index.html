@@ -15,7 +15,7 @@
             <li><a href="#About Us">About Us</a></li>
             <li><a href="#mobiles">Mobiles</a></li>
             <li><a href="#Footer">Footer</a></li>
-            <li><a href="file:///home/acer/Documents/Assignment%205/signup.html"><button  class="hover:bg-orange-300  hover:text-black  text-white px-3 py-0.2 rounded-full text-lg flex items-center space-x-4 ">sign Up</button></li>
+            <li><a href="./signup.html"><button  class="hover:bg-orange-300  hover:text-black  text-white px-3 py-0.2 rounded-full text-lg flex items-center space-x-4 ">sign Up</button></li></a>
         </ul>
     </nav>
 </section>
@@ -27,7 +27,7 @@
         <div class="absolute inset-0 bg-black bg-opacity-20"></div>
             <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4"> 
             <h1 class="text-4xl md:text-5xl font-bold">Welcome To Our <br>Troco</h1> 
-            <p class="mt-4 text-lg max-w-2xl">Looking for the latest smartphones at the best prices? Visit our phone shop for top brands, great deals, and expert support!</p> 
+            <p class="mt-4 text-lg max-w-5xl">Looking for the latest smartphones at the best prices? Visit our phone shop for top brands, great deals, and expert support!</p> 
         </div>
     </div>
 </section>
@@ -55,25 +55,13 @@
 
 <!--Gallery-->
 <section>
-    <style>
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        .scroll-container {
-            display: flex;
-            width: 200%;
-            animation: scroll 10s linear infinite;   
-        }
-
-    </style>
     <nav id="mobiles" class="bg-black-500 text-black p-4">
         <ul class="flex space-x-6 justify-center">
-            <li><a href="file:///home/acer/Documents/Assignment%205/Detail/oppo.html">OPPO</a></li>
-            <li><a href="file:///home/acer/Documents/Assignment%205/Detail/Realme.html">REALME</a></li>
-            <li><a href="file:///home/acer/Documents/Assignment%205/Detail/Redmi.html">REDMI</a></li>
-            <li><a href="file:///home/acer/Documents/Assignment%205/Detail/Samsung.html">SAMSUNG</a></li>
-            <li><a href="file:///home/acer/Documents/Assignment%205/Detail/Vivo.html">Vivo</a></li>
+            <li><a href="./Detail/oppo.html"><button  class="hover:bg-orange-500  hover:text-black bg-orange-300 text-black px-3 py-0.2 rounded-lg text-lg flex items-center space-x-4 ">oppo</button></li></a>
+            <li><a href="./Detail/realmr.html"><button  class="hover:bg-orange-500  hover:text-black bg-orange-300 text-black px-3 py-0.2 rounded-lg text-lg flex items-center space-x-4 ">Realme</button></li></a>
+            <li><a href="./Detail/redmi.html"><button  class="hover:bg-orange-500  hover:text-black bg-orange-300 text-black px-3 py-0.2 rounded-lg text-lg flex items-center space-x-4 ">Redmi</button></li></a>
+            <li><a href="./Detail/samsung.html"><button  class="hover:bg-orange-500  hover:text-black bg-orange-300 text-black px-3 py-0.2 rounded-lg text-lg flex items-center space-x-4 ">samsung</button></li></a>
+            <li><a href="./Detail/vivo.html"><button  class="hover:bg-orange-500  hover:text-black bg-orange-300 text-black px-3 py-0.2 rounded-lg text-lg flex items-center space-x-4 ">vivo</button></li></a>
          </ul>
     </div><br>
     <div class="overflow-hidden w-full relative">
@@ -144,7 +132,18 @@
 <!--Footer End-->
 
 
+<style>
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    .scroll-container {
+        display: flex;
+        width: 200%;
+        animation: scroll 10s linear infinite;   
+    }
 
+</style>
 
 <script>
     const testimonials = [ 
@@ -182,15 +181,7 @@
         currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1; 
         showTestimonial(currentIndex); 
     });
-</Script>
-<script>
-
-
-</script>
-
-
-
-        
+</Script>  
 
 
 
