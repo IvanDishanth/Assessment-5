@@ -10,6 +10,7 @@
 <!--nav-->
 <section>
     <nav class="fixed top-0 left-0 w-full bg-black shadow-md p-5 z-50">
+        <button id="darkmodeBtn" class="text-white hover:bg-red-700 rounded-lg px-3 right-4 top-2">darkmode</button>
         <ul class="absolute right-4 top-2 text-white space-x-4 flex">
             <li><a href="#Home"><button class="hover:bg-red-700 rounded-lg px-3">Home</button></a></li>
             <li><a href="#About Us"><button class="hover:bg-red-700 rounded-lg px-3">About Us</button></a></li>
@@ -66,24 +67,25 @@
          </ul>
     </div><br>
     <div class="overflow-hidden w-full relative">
-        <div class="scroll-container">
-            <ul class="space-x-4 flex">
-            <li><img src="Assests/images/oppo/Oppo A3X .webp" alt="About Image 1" class="w-60 mx-2"></li>
-            <li><img src="Assests/images/realme/Realme 10 .webp" alt="About Image 2" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/redmi/Redmi 13 4G .jpg" alt="About Image 3" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/samsung/GALAXY S10.webp" alt="About Image 4" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/vivo/Vivo V29 .png" alt="About Image 5" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/oppo/Oppo Reno 12 FS .jpeg" alt="About Image 6" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/redmi/Xiaomi Redmi Note 14 Pro plus .jpg" alt="About Image 7" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/samsung/Galaxy Z Fold 4 5G.webp" alt="About Image 8" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/oppo/Oppo A3X .webp" alt="About Image 1" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/realme/Realme 10 .webp" alt="About Image 2" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/redmi/Redmi 13 4G .jpg" alt="About Image 3" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/samsung/GALAXY S10.webp" alt="About Image 4" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/vivo/Vivo V29 .png" alt="About Image 5" class="w-60 mx-2 rounded-lg "></li>
-            <li><img src="Assests/images/oppo/Oppo Reno 12 FS .jpeg" alt="About Image 6" class="w-60 mx-2 rounded-lg "></li>
-            <li><img src="Assests/images/redmi/Xiaomi Redmi Note 14 Pro plus .jpg" alt="About Image 7" class="w-60 mx-2 rounded-lg"></li>
-            <li><img src="Assests/images/samsung/Galaxy Z Fold 4 5G.webp" alt="About Image 8" class="w-60 mx-2 rounded-lg "></li>
+        <div class="scroll-container ">
+            <ul class="space-x-4 flex ">
+                <li class="group"><img src="Assests/images/oppo/Oppo A3X .webp"  alt="About Image 1" class="w-60 mx-2 rounded-lg hover-scroll-100 object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/realme/Realme 10 .webp" alt="About Image 2" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/redmi/Redmi 13 4G .jpg" alt="About Image 3" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/samsung/GALAXY S10.webp" alt="About Image 4" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/vivo/Vivo V29 .png" alt="About Image 5" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/oppo/Oppo Reno 12 FS .jpeg" alt="About Image 6" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/redmi/Xiaomi Redmi Note 14 Pro plus .jpg" alt="About Image 7" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/samsung/Galaxy Z Fold 4 5G.webp" alt="About Image 8" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/oppo/Oppo A3X .webp" alt="About Image 1" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/realme/Realme 10 .webp" alt="About Image 2" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/redmi/Redmi 13 4G .jpg" alt="About Image 3" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/samsung/GALAXY S10.webp" alt="About Image 4" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/vivo/Vivo V29 .png" alt="About Image 5" class="w-60 mx-2 rounded-lg  object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/oppo/Oppo Reno 12 FS .jpeg" alt="About Image 6" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/redmi/Xiaomi Redmi Note 14 Pro plus .jpg" alt="About Image 7" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+                <li class="group overflow-hidden"><img src="Assests/images/samsung/Galaxy Z Fold 4 5G.webp" alt="About Image 8" class="w-60 mx-2 rounded-lg object-cover transition-transform duration-300 group-hover:scale-125"></li>
+            </ul>
         </div>
     </div>
 </section>
@@ -132,7 +134,6 @@
 </section>
 <!--Footer End-->
 
-
 <style>
     @keyframes scroll {
         0% { transform: translateX(0); }
@@ -144,9 +145,74 @@
         animation: scroll 10s linear infinite;   
     }
 
+    #darkmodeBtn {
+        background-color: #1a202c; /* Dark gray */
+        color: white;
+        border: 2px solid #4a5568; /* Lighter gray for border */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #darkmodeBtn:hover {
+        background-color: #e53e3e; /* Red on hover */
+        color: black;
+    }
+
 </style>
 
+
 <script>
+
+// Function 2: Toggle Dark Mode
+function toggleDarkMode() {
+    const darkModeBtn = document.getElementById('darkmodeBtn');
+    darkModeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    });
+}
+toggleDarkMode();
+
+
+// Function 1: Smooth Scroll to Section
+function smoothScrollToSection() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+}
+smoothScrollToSection();
+
+
+
+// Function 3: Dynamic Year in Footer
+function updateFooterYear() {
+    const footer = document.querySelector('#Footer span');
+    const currentYear = new Date().getFullYear();
+    footer.innerHTML = `© ${currentYear} <a href="https://flowbite.com/" class="hover:underline">Troco™</a>. All Rights Reserved.`;
+}
+updateFooterYear();
+
+// Function 4: Image Carousel Auto-Scroll
+function autoScrollGallery() {
+    const gallery = document.querySelector('.scroll-container');
+    let scrollAmount = 0;
+
+    setInterval(() => {
+        scrollAmount += 1;
+        if (scrollAmount >= gallery.scrollWidth / 2) {
+            scrollAmount = 0;
+        }
+        gallery.style.transform = `translateX(-${scrollAmount}px)`;
+    }, 30);
+}
+autoScrollGallery();
+
+
+
+
     const testimonials = [ 
         { 
             image: "Assests/images/About 1.webp", 

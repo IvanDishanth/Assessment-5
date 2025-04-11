@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>OPPO details</title>
+    <title>Buy details</title>
 </head>
 <body>
 <!--nav-->
@@ -17,32 +17,6 @@
     </nav>
 </section><br><br>
 <!--nav End-->
-
-<!--Product Detail-->
-<section>
-    <h1 class="text-4xl md:text-5xl text-red-800 font-bold text-center">OPPO A3s</h1> 
-    <div class="flex flex-col md:flex-row md:items-start space-y-6 md:space-y-0 md:space-x-10 p-10 justify-center">
-        <div class=" relative shadow-lg rounded-lg flex flex-col items-center p-4">
-            <img src="images/oppo/Oppo A3s.avif" alt="mobile 1" class="w-62 h-62 md:w-96 md:h-96 rounded-lg ">
-        </div>
-    <div class="max-w-lg"><br><br>
-    <div>
-        <ul>
-            <div class=" bg-orange-200 shadow-lg p-5 ">
-            <li class="font-extrabold">mobile Information</li><br>
-            <li>Display: 6.2-inch HD+ (720 x 1520 pixels), IPS LCD</li>
-            <li>Processor: Qualcomm Snapdragon 450</li>
-            <li>RAM & Storage: 2GB/16GB, 3GB/32GB, 4GB/64GB (Expandable via microSD)</li>
-            <li>Rear Camera: 13MP (main) + 2MP (depth)</li>
-            <li>Front Camera: 8MP</li>
-            <li>Battery: 4230mAh (Non-removable)</li>
-            <li>OS: ColorOS 5.1 (based on Android 8.1 Oreo)</li>
-            <li>Connectivity: Dual SIM, 4G LTE, Wi-Fi, Bluetooth 4.2, micro-USB</li>
-            </div><br><br>
-        </ul>
-    </div> 
-</section>
-<!--Product Detail End-->
 
 <!--Footer-->
 <section>
@@ -86,5 +60,15 @@
     </div>
 </section>
 <!--Footer End-->
+<script>
+    document.getElementById('buy').addEventListener('click', function() {
+        alert('Redirecting to purchase page...');
+        window.location.href = 'purchase.html'; // Replace with your purchase page URL
+    });
+
+    document.getElementById('add').addEventListener('click', function() {
+        alert('Item added to cart!');
+    });
+</script>
 </body>
 </html>

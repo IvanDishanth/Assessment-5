@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>OPPO details</title>
+</head>
+<body>
+<!--nav-->
+<section>
+    <nav class="fixed top-0 left-0 w-full bg-black shadow-md p-5 z-50">
+        <ul class="absolute right-4 top-2 text-white space-x-4 flex">
+            <li><a href="../oppo.html"><button class="hover:bg-red-700 rounded-lg px-3">mobiles</a></li>
+            <li><a href="./signup.html"><button  class="hover:bg-orange-500  hover:text-black  text-white px-3 rounded-lg ">sign Up</button></li></a>
+        </ul>
+    </nav>
+</section><br><br>
+<!--nav End-->
+
+<!--Product Detail-->
+<section>
+    <h1 class="text-4xl md:text-5xl text-red-800 font-bold text-center">OPPO A3s</h1> 
+    <div class="flex flex-col md:flex-row md:items-start space-y-6 md:space-y-0 md:space-x-10 p-10 justify-center">
+        <div class=" relative shadow-lg rounded-lg flex flex-col items-center p-4">
+            <img src="images/oppo/Oppo A3s.avif" alt="mobile 1" class="w-62 h-62 md:w-96 md:h-96 rounded-lg ">
+        </div>
+    <div class="max-w-lg"><br><br>
+    <div>
+        <ul>
+            <div class=" bg-orange-200 shadow-lg p-5 ">
+            <li class="font-extrabold">mobile Information</li><br>
+            <li>Display: 6.2-inch HD+ (720 x 1520 pixels), IPS LCD</li>
+            <li>Processor: Qualcomm Snapdragon 450</li>
+            <li>RAM & Storage: 2GB/16GB, 3GB/32GB, 4GB/64GB (Expandable via microSD)</li>
+            <li>Rear Camera: 13MP (main) + 2MP (depth)</li>
+            <li>Front Camera: 8MP</li>
+            <li>Battery: 4230mAh (Non-removable)</li>
+            <li>OS: ColorOS 5.1 (based on Android 8.1 Oreo)</li>
+            <li>Connectivity: Dual SIM, 4G LTE, Wi-Fi, Bluetooth 4.2, micro-USB</li><br>
+            <button id="buy" class="bg-red-800 text-white px-3 py-1 rounded-lg hover:bg-red-700">Buy Now</button>
+            <button id="add" class="bg-red-800 text-white px-3 py-1 rounded-lg hover:bg-red-700">Add to Cart</button>
+            </div><br><br>
+        </ul>
+    </div> 
+</section>
+<!--Product Detail End-->
+
+<!--Footer-->
+<section>
+    <div id="Footer" class="bg-white dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4"><a href="https://flowbite.com/" class="hover:underline">Flowbite</a></li>
+                        <li><a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4"><a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a></li>
+                        <li><a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4"><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Troco™</a>. All Rights Reserved.</span>
+        </div>
+    </div>
+</section>
+<!--Footer End-->
+<script>
+    document.getElementById("buy").addEventListener("click", function() {
+        showPurchaseScreen();
+    });
+
+    document.getElementById("add").addEventListener("click", function() {
+        showPurchaseScreen();
+    });
+
+    function showPurchaseScreen() {
+        document.body.innerHTML = `
+            <section class="p-10">
+                <h1 class="text-3xl font-bold text-center mb-6">Purchase Details</h1>
+                <div class="max-w-md mx-auto bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <label for="quantity" class="block text-lg font-medium mb-2">Quantity:</label>
+                    <input type="number" id="quantity" class="w-full p-2 border rounded-lg mb-4" min="1" value="1">
+                    
+                    <button id="addToCart" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 w-full mb-4">Add to Cart</button>
+                    
+                    <h2 class="text-lg font-medium mb-2">Payment Method:</h2>
+                    <div class="space-y-2">
+                        <label class="block">
+                            <input type="radio" name="payment" value="card" class="mr-2"> Card
+                        </label>
+                        <label class="block">
+                            <input type="radio" name="payment" value="cod" class="mr-2"> Cash on Delivery
+                        </label>
+                    </div>
+                    <button id="proceedPayment" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-500 w-full mt-4">Proceed to Payment</button>
+                </div>
+            </section>
+        `;
+
+        document.getElementById("addToCart").addEventListener("click", function() {
+            alert("Item added to cart successfully!");
+        });
+
+        document.getElementById("proceedPayment").addEventListener("click", function() {
+            const paymentMethod = document.querySelector('input[name="payment"]:checked');
+            if (paymentMethod) {
+                alert(`You selected ${paymentMethod.value} as your payment method.`);
+            } else {
+                alert("Please select a payment method.");
+            }
+        });
+    }
+    
+</script>
+
+
+
+
+
+</script>
+</body>
+</html>
