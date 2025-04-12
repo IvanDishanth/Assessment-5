@@ -24,15 +24,32 @@
 
 
 <!--Home Page-->
-<section>
-    <div  id="Home" class="relative h-screen bg-[url('Assests/images/shopping.jpg')] bg-cover bg-center">
-        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
-            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4"> 
-            <h1 class="text-4xl md:text-5xl font-bold">Welcome To Our <br>Troco</h1> 
-            <p class="mt-4 text-lg max-w-5xl">Looking for the latest smartphones at the best prices? Visit our phone shop for top brands, great deals, and expert support!</p> 
+
+  <section class="bg-white w-full px-8 py-20 flex items-center justify-center relative h-screen bg-[url('Assests/images/01.png')] bg-cover bg-center">
+    <div id="contentSlider" class="relative w-full max-w-5xl h-full flex items-center justify-center"> 
+
+      <!-- Text Block-->
+      <div class="contentBlock absolute fade opacity-100" id="textBlock">
+        <div id="heroContent" class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 opacity-100 transition-opacity duration-1000">
+            <div class="max-w-xl text-center">
+            <p class="text-red-600 text-5xl font-bold">Welcome to Our Store</p>
+            <h1 class="text-2xl md:text-3xl font-semibold leading-tight mt-2">
+            Find the best products at unbeatable prices.<span class="font-extrabold text-black"></span><br />
+               
+            </h1>
+            </div>
         </div>
+      </div>
+      <!--Image Block-->
+      <div class="contentBlock absolute fade opacity-0" id="imageBlock">
+        <div class="flex space-x-2">
+          <img src="Assests/images/Asus-ROG-Phone-9-and-Asus-ROG-Phone-9-Pro-removebg-preview.png" alt="1" class="max-w-xl rotate-[-40deg]" />
+          <img src="Assests/images/Google-Pixel-9-Pixel.9-Pro-Pixel-9-Pro-Fold-Leak-nennt-Farboptionen-und-bietet-vorab-Hintergrundbilderan-removebg-preview(1).png" alt="2" class="max-w-xl rotate-[40deg]" />
+        </div>
+      </div>
+
     </div>
-</section>
+  </section>
 <!--Home Page-->
 
 <!--About-->
@@ -157,6 +174,28 @@
         color: black;
     }
 
+
+
+
+    .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
+
+
+
+
+
+
 </style>
 
 
@@ -211,43 +250,87 @@ function autoScrollGallery() {
 autoScrollGallery();
 
 
+    const testimonials = [
+    {
+      image: "Assests/images/About 1.webp",
+      text: `"Get 10% off when you purchase your phone with a card! Enjoy savings and a smooth checkout experience. Hurry, this offer won’t last long!"`
+    },
+    {
+      image: "Assests/images/About 2.jpg",
+      text: `"Our new arrivals are here! Check out the latest models with unbeatable prices and top features."`
+    },
+    {
+      image: "Assests/images/About 3.webp",
+      text: `"Your satisfaction is our priority. Experience top-tier customer service and support with every purchase."`
+    }
+  ];
+
+  let currentIndex = 0;
+  const imageEl = document.getElementById("userImage");
+  const textEl = document.getElementById("feedbackText");
+
+  function showTestimonial(index) {
+    const testimonial = testimonials[index];
+    imageEl.src = testimonial.image;
+    textEl.textContent = testimonial.text;
+  }
+
+  function nextTestimonial() {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    showTestimonial(currentIndex);
+  }
+
+  function prevTestimonial() {
+    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentIndex);
+  }
+
+  document.getElementById("nextBtn").addEventListener("click", nextTestimonial);
+  document.getElementById("prevBtn").addEventListener("click", prevTestimonial);
+
+  // Auto-scroll every 5 seconds
+  setInterval(nextTestimonial, 2000);
 
 
-    const testimonials = [ 
-        { 
-            image: "Assests/images/About 1.webp", 
-            text: "Get 10% off when you purchase your phone with a card!Enjoy savings and a smooth checkout experience.Hurry, this offer won’t last long!"
-        }, 
-        {   
-            image: "Assests/images/About 2.jpg", 
-            text: "Our phone shop offers easy EMI options to make buying your dream phone more affordable. Choose from 0% interest EMI plans and flexible monthly payments that fit your budget. Get your favorite smartphone today and pay in easy installments without any hassle! 📱💳.", 
-        }, 
-        {   
-            image: "Assests/images/About 3.webp", 
-            text: "At our phone shop, we offer a one-time free display replacement if your phone screen breaks within the warranty period. Enjoy peace of mind knowing your device is protected from accidental damage. Buy with confidence and get a free screen replacement for your first break! 📱🔧", 
-        } 
-    ];
 
-    let currentIndex = 0; 
-    const userImage = document.getElementById("userImage"); 
-    const feedbackText = document.getElementById("feedbackText"); 
-    const prevBtn = document.getElementById("prevBtn"); 
-    const nextBtn = document.getElementById("nextBtn");
 
-    function showTestimonial(index) { 
-        userImage.src = testimonials[index].image; 
-        feedbackText.textContent = `"${testimonials[index].text}"`;
+
+
+
+
+const textBlock = document.getElementById("textBlock");
+    const imageBlock = document.getElementById("imageBlock");
+    let showText = true;
+
+    function toggleContent() {
+      if (showText) {
+        textBlock.classList.replace("opacity-100", "opacity-0");
+        imageBlock.classList.replace("opacity-0", "opacity-100");
+      } else {
+        imageBlock.classList.replace("opacity-100", "opacity-0");
+        textBlock.classList.replace("opacity-0", "opacity-100");
+      }
+      showText = !showText;
     }
 
-    prevBtn.addEventListener("click", () => { 
-        currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1; 
-        showTestimonial(currentIndex); 
-    });
-            
-    nextBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1; 
-        showTestimonial(currentIndex); 
-    });
+    // Toggle every 5 seconds
+    setInterval(toggleContent, 4000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </Script>  
 
 
